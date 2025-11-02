@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muntassir Ahmed Nafi | Portfolio</title>
+  <style>
+    :root {
+      --blue: #3b82f6;
+      --purple: #8b5cf6;
+      --bg: #f0f4ff;
+      --text: #1f2937;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, var(--blue), var(--purple));
+      color: white;
+      padding: 5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .header-content {
+      max-width: 600px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    header img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .btn {
+      padding: 0.8rem 1.8rem;
+      background: white;
+      color: var(--blue);
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: var(--purple);
+      color: white;
+    }
+    section {
+      padding: 4rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--purple);
+      font-size: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .social {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .social a {
+      display: block;
+      margin: 10px 0;
+      color: var(--blue);
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social a:hover {
+      color: var(--purple);
+    }
+    footer {
+      background: var(--blue);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .skills .card {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        margin-top: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Muntassir Ahmed Nafi</h1>
+      <p>Software Engineer | Web Designer | CEO & Founder of Orzai | Metropolitan University (3rd Year)</p>
+      <a href="#portfolio" class="btn">Explore My Work</a>
+    </div>
+    <img src="WhatsApp Image 2025-10-26 at 12.36.31_e7713879.jpg" alt="Muntassir Ahmed Nafi">
+  </header>
+  <section id="services">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Modern, clean, and user-friendly interfaces tailored to your brand.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive Layouts</h3>
+        <p>Mobile-first designs that adapt beautifully across all devices.</p>
+      </div>
+      <div class="card">
+        <h3>JavaScript Interactivity</h3>
+        <p>Dynamic features like sliders, modals, and form validation.</p>
+      </div>
+      <div class="card">
+        <h3>UI/UX Optimization</h3>
+        <p>Improving user experience through thoughtful design and flow.</p>
+      </div>
+      <div class="card">
+        <h3>Performance Tuning</h3>
+        <p>Fast-loading websites with optimized assets and code.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Basics</h3>
+        <p>Clean markup and structure for better search engine visibility.</p>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Startup Landing Page</h3>
+        <p>Built with HTML, CSS Grid, and JavaScript animations.</p>
+      </div>
+      <div class="card">
+        <h3>Blog Template</h3>
+        <p>Responsive layout with interactive cards and sidebar.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Site</h3>
+        <p>Personal branding site with smooth scroll and hover effects.</p>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>JavaScript-based app fetching live weather data via API.</p>
+      </div>
+      <div class="card">
+        <h3>To-Do List</h3>
+        <p>Interactive task manager with local storage support.</p>
+      </div>
+      <div class="card">
+        <h3>Product Showcase</h3>
+        <p>Gallery-style layout with modal previews and filters.</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid skills">
+      <div class="card">HTML5</div>
+      <div class="card">CSS3</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Bootstrap</div>
+      <div class="card">Tailwind CSS</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">Responsive Design</div>
+      <div class="card">Figma</div>
+      <div class="card">API Integration</div>
+    </div>
+  </section>
+  <section class="social">
+    <h2>Connect with Me</h2>
+    <a href="https://github.com/" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    <a href="mailto:muntassurahmednafi10@icloud.com">Email: muntassurahmednafi10@icloud.com</a>
+    <a href="tel:+8801886896897">Phone: 01886896897</a>
+    <a href="https://www.facebook.com/MuntassirAhmedNafi" target="_blank">Facebook: Muntassir Ahmed Nafi</a>
+    <a href="https://www.instagram.com/hustle_flyswat_10" target="_blank">Instagram: hustle_flyswat_10</a>
+  </section>
+  <footer>
+    <p>&copy; 2025 Muntassir Ahmed Nafi. All rights reserved.</p>
+  </footer>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
